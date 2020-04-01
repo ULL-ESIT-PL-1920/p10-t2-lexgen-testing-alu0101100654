@@ -2,7 +2,7 @@ const debug = process.env["DEBUG"];
 const { inspect } = require('util');
 const ins = (x) => { if (debug) console.log(inspect(x, {depth: null})) };
 
-const buildLexer = require('./@ULL-ESIT-PL-1920/p10-t2-lexgen-code-alu0101100654.js');
+const { buildLexer } = require('@ULL-ESIT-PL-1920/p10-t2-lexgen-code-alu0101100654');
 
 const SPACE = /(?<SPACE>\s+|\/\/.*)/;
 const RESERVEDWORD = /(?<RESERVEDWORD>\b(const|let)\b)/;
@@ -16,7 +16,7 @@ const myTokens = [
 ];
 
 let str, lexer, r;
-lexer = buildLexer.buildLexer(myTokens);
+lexer = buildLexer(myTokens);
 
 str = 'const varName = "value"';
 ins(str);
@@ -79,9 +79,9 @@ const tokensWithError = [
 ['STRING', STRING], ['OP', OP], ['ERROR', /.*/]
 ];
 
-const newLexer = buildLexer.buildLexer(tokensWithError);
+const newLexer = buildLexer(tokensWithError);
 test(str, () => {
-  expect(() => newLexer(str)).toThrow(Error);
+  expect(() => newLexer(str)).toThrow("Error. No se permite un token de tipo ERROR");
 });
 
 str = 'Esto solo debería dar un error Ç+3\nY no debería dar dos Ç+3';
