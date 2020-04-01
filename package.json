@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ULL-ESIT-PL-1920/p10-t2-lexgen-testing-alu0101100654#readme",
   "dependencies": {
-    "@ULL-ESIT-PL-1920/p10-t2-lexgen-code-alu0101100654": "^0.1.2",
+    "@ull-esit-pl-1920/p10-t2-lexgen-code-alu0101100654": "^0.1.2",
     "jest": "^25.2.4"
   }
 }
