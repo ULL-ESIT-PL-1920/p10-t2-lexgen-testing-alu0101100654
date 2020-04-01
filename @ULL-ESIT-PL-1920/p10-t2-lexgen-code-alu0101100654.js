@@ -31,7 +31,7 @@ function buildLexer(tokens) {
     /**
      * @desc Función que permite la creación de un token en forma de objeto JS.
      * @param {String} tokenType Tipo al que se asocia el token.
-     * @param {String} tokenValue Valor que toma el token.
+     * @param {String} tokenValue Valor que toma el token
      * @return {Object} Objecto que representa un token. Su estructura es la
      * siguiente: {type: tokenType, value: tokenValue}.
      */
