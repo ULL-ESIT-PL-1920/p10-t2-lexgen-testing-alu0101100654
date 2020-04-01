@@ -10,6 +10,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm i && npm update & npm test
+      - run: npm i -f && npm update & npm test
         env:
             CI: true
