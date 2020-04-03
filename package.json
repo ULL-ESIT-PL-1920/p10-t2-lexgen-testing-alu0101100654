@@ -1,7 +1,7 @@
 {
   "name": "p10-t2-lexgen-testing-alu0101100654",
   "version": "0.1.0",
-  "description": "",
+  "description": "Pruebas del módulo p10-t2-lexgen-code-alu010110065",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ULL-ESIT-PL-1920/p10-t2-lexgen-testing-alu0101100654.git"
   },
-  "author": "",
+  "author": "Florentín Pérez Glez.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ULL-ESIT-PL-1920/p10-t2-lexgen-testing-alu0101100654/issues"
